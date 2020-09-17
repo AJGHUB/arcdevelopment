@@ -38,7 +38,7 @@ SEO in React > switch to Next.js || Google Analytics for data-driven decisions i
 <br> 
 
 ## Personal Goals 
-To become more comfortable with React JS at an intermediate level as a React developer
+**To become more comfortable with React JS at an intermediate level as a React developer**
 looking to bridge the gap between design and development. I feel like I am learning React and still have more to learn before building a polished website.
 I have great designs but have struggled on perfectly implementing them in practice. Im a developer who wants to be able to build any website design that's handed to them.
 I want to master responsive design and Im looking for a better understanding of UX/UI design principles
