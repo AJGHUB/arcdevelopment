@@ -3,7 +3,7 @@
 SEO in React, > switch to Next.js || Google Analytics for data-driven decisions, integrated animations from After Effects**
 
 
-## Tech Content Im learning with this build:
+## Tech Content I am learning with this build:
 - This project is built with the preprogrammed create-react-app, and utilises React Router, and Material-UI design concepts.
 - This build applications will sit well on every screen with Material-UI's responsive design system
 - Insights are gained to different image optimization strategies
@@ -21,7 +21,9 @@ SEO in React, > switch to Next.js || Google Analytics for data-driven decisions,
 - Incorporate Google Analytics to collect data about who is interacting with this application and what they're doing
 - Build custom organizational functionality to control data displayed in tables including search, filtering, delete, and undo
 
-## Build goals:
+
+
+## Build Goals:
 1. To create beautifully designed production applications from scratch with Material-UI
 2. To build an application that looks perfect on every screen with Material-UI's responsive design system
 3. Refine UX/UI design intuition and see concepts in action
@@ -32,6 +34,8 @@ SEO in React, > switch to Next.js || Google Analytics for data-driven decisions,
 8. Collect data and track events with Google Analytics in React JS
 9. Ensure cross-browser support with my styles in Material-UI
 10. Deploy production Material-UI/React JS applications
+
+
 
 ## Personal Goals: 
 **To become more comfortable with React JS at an intermediate level as a React developer**
