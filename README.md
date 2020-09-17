@@ -1,6 +1,6 @@
 
 **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-SEO in React, > switch to Next.js || Google Analytics for data-driven decisions, integrated animations from After Effects**
+SEO in React > switch to Next.js || Google Analytics for data-driven decisions integrated animations from After Effects**
 
 
 ## Tech Content I am learning with this build:
