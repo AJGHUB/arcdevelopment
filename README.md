@@ -3,7 +3,7 @@
 SEO in React > switch to Next.js || Google Analytics for data-driven decisions integrated animations from After Effects**
 
 
-## Tech Content I am learning with this build:
+## Tech Content I am learning with this build project:
 - This project is built with the preprogrammed create-react-app, and utilises React Router, and Material-UI design concepts.
 - This build applications will sit well on every screen with Material-UI's responsive design system
 - Insights are gained to different image optimization strategies
