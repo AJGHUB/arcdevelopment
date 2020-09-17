@@ -22,9 +22,8 @@ SEO in React > switch to Next.js || Google Analytics for data-driven decisions i
 - Build custom organizational functionality to control data displayed in tables including search, filtering, delete, and undo
 <br>
 <br>
-<br>
 
-##Build Goals
+## Build Goals
 1. To create beautifully designed production applications from scratch with Material-UI
 2. To build an application that looks perfect on every screen with Material-UI's responsive design system
 3. Refine UX/UI design intuition and see concepts in action
@@ -36,9 +35,9 @@ SEO in React > switch to Next.js || Google Analytics for data-driven decisions i
 9. Ensure cross-browser support with my styles in Material-UI
 10. Deploy production Material-UI/React JS applications
 <br>
-<br>
-<br>
-##Personal Goals 
+<br> 
+
+## Personal Goals 
 To become more comfortable with React JS at an intermediate level as a React developer
 looking to bridge the gap between design and development. I feel like I am learning React and still have more to learn before building a polished website.
 I have great designs but have struggled on perfectly implementing them in practice. Im a developer who wants to be able to build any website design that's handed to them.
