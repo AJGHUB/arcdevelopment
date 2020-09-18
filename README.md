@@ -6,20 +6,20 @@ SEO in React > switch to Next.js || Google Analytics for data-driven decisions i
 ## Tech Content I am learning with this build project:
 - This project is built with the preprogrammed create-react-app, and utilises React Router, and Material-UI design concepts.
 - This build applications will sit well on every screen with Material-UI's responsive design system
-- Insights are gained to different image optimization strategies
-- Im wanting to create a theme for my application by mastering Material-UI's centralized styling system
-- Learn how to use responsive design to ensure this applications look perfect on any screen size and orientation
-- Use the Material-UI grid system to align complex layouts perfectly
-- Export animations from Adobe After Effects and efficiently importing them into a React application with react-lottie
-- Leverage serverless functionality with Google Firebase Cloud Functions
+- Insights are gained to different image optimization strategies.
+- Im wanting to create a theme for my application by mastering Material-UI's centralized styling system.
+- Learn how to use responsive design to ensure this applications look perfect on any screen size and orientation.
+- Use the Material-UI grid system to align complex layouts perfectly.
+- Export animations from Adobe After Effects and efficiently importing them into a React application with react-lottie.
+- Leverage serverless functionality with Google Firebase Cloud Functions.
 - Implement sending emails through Node.js
-- Make network requests in React while displaying feedback like loading spinners with Material-UI
-- Migrating a project from create-react-app to Next.js and learn why
-- Research Cross-browser testing and support
-- Deploying a Next.js project and add a custom domain name -- for two different hosting platforms
-- Code Search Engine Optimization (SEO) in the React applications
-- Incorporate Google Analytics to collect data about who is interacting with this application and what they're doing
-- Build custom organizational functionality to control data displayed in tables including search, filtering, delete, and undo
+- Make network requests in React while displaying feedback like loading spinners with Material-UI.
+- Migrating a project from create-react-app to Next.js and learn why.
+- Research Cross-browser testing and support.
+- Deploying a Next.js project and add a custom domain name -- for two different hosting platforms.
+- Code Search Engine Optimization (SEO) in the React applications.
+- Incorporate Google Analytics to collect data about who is interacting with this application and what they're doing.
+- Build custom organizational functionality to control data displayed in tables including search, filtering, delete, and undo.
 <br>
 <br>
 
