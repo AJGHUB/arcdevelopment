@@ -19,4 +19,7 @@ export default createMuiTheme({
       main: `${lglassPurple}`,
     },
   },
+  typography: {
+    h3: 300,
+  },
 });
