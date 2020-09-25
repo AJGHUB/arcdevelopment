@@ -30,7 +30,7 @@ export default createMuiTheme({
       fontFamily: 'Pacifico',
       fontSize: '1rem',
       textTransform: 'none',
-      color: "white"
-    }
+      color: 'white',
+    },
   },
 });
