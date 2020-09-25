@@ -29,7 +29,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '3em',
   },
   logo: {
-    height: '7em',
+    height: '8em',
+  },
+  logoContainer: {
+    padding: 0,
+    "&:hover": {
+      backgroundColor: "transparent"
+    },
+    marginLeft: '120px',
   },
   tabContainer: {
     marginLeft: 'auto',
@@ -77,7 +84,15 @@ export default function Header(props) {
       <ElevationScroll>
         <AppBar position="fixed">
           <Toolbar disableGutters>
-            <img alt="company logo" src={logo} />
+            <Button
+              component={Link}
+              to="/"
+              disableRipple
+              onclick={() => setValue(0)}
+              className={classes.logoContainer}
+            >
+              <img alt="company logo" src={logo} />
+            </Button>
             <Tabs
               value={value}
               onChange={handleChange}
