@@ -58,12 +58,18 @@ const useStyles = makeStyles((theme) => ({
     height: '45px',
   },
   menu: {
-    backgroundColor: 'arcDBlue',
+    backgroundColor: 'theme.palette.common.blue',
+    // backgroundColor: 'blue', this works!! 
     color: 'white',
+    borderRadius: '0',
   },
   menuItem: {
-    ...theme.typography.tab
-  }
+    ...theme.typography.tab,
+    opacity: 0.7,
+    '&:hover': {
+      opacity: 1,
+    },
+  },
 }));
 
 export default function Header(props) {
