@@ -6,11 +6,13 @@ import { makeStyles } from '@material-ui/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
+import { Link } from 'react-router-dom';
+
 import logo from '../../assets/logo.svg';
+// import { blue } from '@material-ui/core/colors';
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -55,6 +57,10 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '25px',
     height: '45px',
   },
+  // menu: {
+  //   backgroundColor: theme.palette.common.blue,
+  //   color: "white"
+  // },
 }));
 
 export default function Header(props) {
@@ -102,7 +108,7 @@ export default function Header(props) {
               component={Link}
               to="/"
               disableRipple
-              onclick={() => setValue(0)}
+              onClick={() => setValue(0)}
               className={classes.logoContainer}
             >
               <img alt="company logo" src={logo} />
@@ -151,21 +157,57 @@ export default function Header(props) {
               variant="contained"
               color="secondary"
               className={classes.button}
-            >
-              Free Estimate
+            >Free Estimate
             </Button>
             <Menu
               id="simple-menu"
               anchorEl={anchorEl}
               open={open}
               onClose={handleClose}
+              classes={{ paper: classes.menu }}
               MenuListProps={{ onMouseLeave: handleClose }}
+              // elevation{0}
             >
-              <MenuItem onClick={handleClose}>
+              <MenuItem
+                onClick={() => {
+                  handleClose();
+                  setValue(1);
+                }}
+                component={Link}
+                to="/services"
+              >
+                Services
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleClose();
+                  setValue(1);
+                }}
+                component={Link}
+                to="/customsoftware"
+              >
                 Custom Software Development
               </MenuItem>
-              <MenuItem onClick={handleClose}>Mobile App Development</MenuItem>
-              <MenuItem onClick={handleClose}>Website Development</MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleClose();
+                  setValue(1);
+                }}
+                component={Link}
+                to="/mobileapps"
+              >
+                Mobile App Development
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleClose();
+                  setValue(1);
+                }}
+                component={Link}
+                to="/websites"
+              >
+                Website Development
+              </MenuItem>
             </Menu>
           </Toolbar>
         </AppBar>
