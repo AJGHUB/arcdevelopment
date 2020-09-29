@@ -12,7 +12,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
-// import { blue } from '@material-ui/core/colors';
+import { blue } from '@material-ui/core/colors'; //?? why do I have this is this needed ?
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -57,10 +57,13 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '25px',
     height: '45px',
   },
-  // menu: {
-  //   backgroundColor: theme.palette.common.blue,
-  //   color: "white"
-  // },
+  menu: {
+    backgroundColor: 'arcDBlue',
+    color: 'white',
+  },
+  menuItem: {
+    ...theme.typography.tab
+  }
 }));
 
 export default function Header(props) {
@@ -157,7 +160,8 @@ export default function Header(props) {
               variant="contained"
               color="secondary"
               className={classes.button}
-            >Free Estimate
+            >
+              Free Estimate
             </Button>
             <Menu
               id="simple-menu"
@@ -166,7 +170,7 @@ export default function Header(props) {
               onClose={handleClose}
               classes={{ paper: classes.menu }}
               MenuListProps={{ onMouseLeave: handleClose }}
-              // elevation{0}
+              elevation={0}
             >
               <MenuItem
                 onClick={() => {
@@ -175,6 +179,7 @@ export default function Header(props) {
                 }}
                 component={Link}
                 to="/services"
+                classes={{ root: classes.menuItem }}
               >
                 Services
               </MenuItem>
@@ -185,6 +190,7 @@ export default function Header(props) {
                 }}
                 component={Link}
                 to="/customsoftware"
+                classes={{ root: classes.menuItem }}
               >
                 Custom Software Development
               </MenuItem>
@@ -195,6 +201,7 @@ export default function Header(props) {
                 }}
                 component={Link}
                 to="/mobileapps"
+                classes={{ root: classes.menuItem }}
               >
                 Mobile App Development
               </MenuItem>
@@ -205,6 +212,7 @@ export default function Header(props) {
                 }}
                 component={Link}
                 to="/websites"
+                classes={{ root: classes.menuItem }}
               >
                 Website Development
               </MenuItem>
