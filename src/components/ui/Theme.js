@@ -1,23 +1,20 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-//my color choices http:colorschemedesigner.com/csd-3.5/#3K523w0w0w0w0
+const arcBlue = "#0B72B9"
+const arcOrange = "#FFBA60"
 
-const arcBlue = '#1142AA';
-const arcPurple = '#4A11AE';
-const arcGreen = '00AB6F';
-const arcDBlue = '06276F';
 
 export default createMuiTheme({
-  pallette: {
+  palette: {
     common: {
-      blue: `${arcGreen}`,
-      green: `${arcDBlue}`,
+      blue: `${arcBlue}`,
+      orange: `${arcOrange}`,
     },
     primary: {
       main: `${arcBlue}`,
     },
     secondary: {
-      main: `${arcPurple}`,
+      main: `${arcOrange}`,
     },
   },
   typography: {
@@ -35,3 +32,10 @@ export default createMuiTheme({
     },
   },
 });
+
+
+//my color choices http:colorschemedesigner.com/csd-3.5/#3K523w0w0w0w0
+// const arcBlue = '#1142AA';
+// const arcPurple = '#4A11AE';
+// const arcGreen = '00AB6F';
+// const arcDBlue = '06276F';
