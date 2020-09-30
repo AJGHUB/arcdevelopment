@@ -13,12 +13,9 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu'
-
-
+import MenuIcon from '@material-ui/icons/Menu';
 
 import logo from '../../assets/logo.svg';
-
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -58,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: 'transparent',
     },
-    marginLeft: '120px',
+    // marginLeft: '120px',   > why do I have to add this to your code Zachary?
   },
   tabContainer: {
     marginLeft: 'auto',
@@ -86,6 +83,16 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
     '&:hover': {
       opacity: 1,
+    },
+  },
+  drawerIcon: {
+    height: '50px',
+    width: '50px',
+  },
+  drawerIconContainer: {
+    marginLeft: 'auto',
+    '&:hover': {
+      backgroundColor: 'transparent',
     },
   },
 }));
@@ -277,11 +284,14 @@ export default function Header(props) {
         onClose={() => setOpenDrawer(false)}
         onOpen={() => setOpenDrawer(true)}
       >
-        {' '}
         Example Drawer
       </SwipeableDrawer>
-      <IconButton onClick={() => setOpenDrawer(!openDrawer)} disableRipple>
-        <MenuIcon />
+      <IconButton
+        className={classes.drawerIconContainer}
+        onClick={() => setOpenDrawer(!openDrawer)}
+        disableRipple
+      >
+        <MenuIcon className={classes.drawerIcon} />
       </IconButton>
     </React.Fragment>
   );
