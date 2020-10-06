@@ -103,9 +103,13 @@ const useStyles = makeStyles((theme) => ({
   drawerItem: {
     ...theme.typography.tab,
     color: 'white',
+    opacity: 0.7,
   },
   drawerItemEstimate: {
     backgroundColor: theme.palette.common.orange,
+  },
+  drawerItemSelected: {
+    opacity: 1,
   },
 }));
 
@@ -295,7 +299,14 @@ export default function Header(props) {
             to="/"
             selected={value === 0}
           >
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText
+              className={
+                value === 0
+                  ? [classes.drawerItem, classes.drawerItemSelected]
+                  : classes.drawerItem
+              }
+              disableTypography
+            >
               Home
             </ListItemText>
           </ListItem>
@@ -310,7 +321,14 @@ export default function Header(props) {
             to="/services"
             selected={value === 1}
           >
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText
+              className={
+                value === 1
+                  ? [classes.drawerItem, classes.drawerItemSelected]
+                  : classes.drawerItem
+              }
+              disableTypography
+            >
               Services
             </ListItemText>
           </ListItem>
@@ -325,7 +343,14 @@ export default function Header(props) {
             to="/revolution"
             selected={value === 2}
           >
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText
+              className={
+                value === 2
+                  ? [classes.drawerItem, classes.drawerItemSelected]
+                  : classes.drawerItem
+              }
+              disableTypography
+            >
               The Revolution
             </ListItemText>
           </ListItem>
@@ -340,7 +365,14 @@ export default function Header(props) {
             to="/about"
             selected={value === 3}
           >
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText
+              className={
+                value === 3
+                  ? [classes.drawerItem, classes.drawerItemSelected]
+                  : classes.drawerItem
+              }
+              disableTypography
+            >
               About Us
             </ListItemText>
           </ListItem>
@@ -355,7 +387,14 @@ export default function Header(props) {
             to="/contact"
             selected={value === 4}
           >
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText
+              className={
+                value === 4
+                  ? [classes.drawerItem, classes.drawerItemSelected]
+                  : classes.drawerItem
+              }
+              disableTypography
+            >
               Contact Us
             </ListItemText>
           </ListItem>
@@ -371,7 +410,14 @@ export default function Header(props) {
             to="/estimate"
             selected={value === 5}
           >
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText
+              className={
+                value === 5
+                  ? [classes.drawerItem, classes.drawerItemSelected]
+                  : classes.drawerItem
+              }
+              disableTypography
+            >
               Free Estimate
             </ListItemText>
           </ListItem>
