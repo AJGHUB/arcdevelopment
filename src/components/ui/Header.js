@@ -155,7 +155,9 @@ export default function Header(props) {
 
 const routes = [
   {name: "Home", link: '/', activeIndex: 0}, 
-  {name: "Services", link: '/services', activeIndex: 1, ariaOwns: anchorEl ? 'simple-menu' : undefined, ariaHaspopup: anchorEl ? 'true' : undefined, mouseOver: event => handleClick(event) }, 
+  {name: "Services", link: '/services', activeIndex: 1, 
+  ariaOwns: anchorEl ? 'simple-menu' : undefined,
+  ariaHaspopup: anchorEl ? 'true' : undefined, mouseOver: event => handleClick(event) }, 
 
 
   {name: "Revolution", link: '/revolution', activeIndex: 2}, 
@@ -192,13 +194,14 @@ const routes = [
      >
       {routes.map((route, index) => (
         <Tab 
-        className={classes.tab} 
-        component={Link} 
-        to={route.link} 
-        label={route.name} 
-        aria-owns={route.ariaOwns} 
-        aria-haspopup={route.ariaPopup} 
-        onMouseOver={route.mouseOver} />
+          key={`${route}${index}`}
+          className={classes.tab} 
+          component={Link} 
+          to={route.link} 
+          label={route.name} 
+          aria-owns={route.ariaOwns} 
+          aria-haspopup={route.ariaHaspopup} 
+          onMouseOver={route.mouseOver} />
       ))}
       </Tabs>
       <Button variant="contained" color="secondary" className={classes.button}>
@@ -212,6 +215,7 @@ const routes = [
         classes={{ paper: classes.menu }}
         MenuListProps={{ onMouseLeave: handleClose }}
         elevation={0}
+        keepMounted //informs DOM - good for SEO - maintains menu as present data
       >
         {menuOptions.map((option, i) => (
           <MenuItem
@@ -244,23 +248,24 @@ const routes = [
         classes={{ paper: classes.drawer }}
       >
         <List disablePadding>
-        {routes.map(route => (
+          {routes.map(route => (
           <ListItem 
-          divider 
-          button 
-          component={Link} 
-          to={route.Link} 
-          selected={value === route.activeIndex} 
-          onClick={() => {
-            setOpenDrawer(false); 
-            setValue(route.activeIndex) 
-            }}>
-            <ListItemText 
-            className={ value === route.activeIndex ? 
-            [classes.drawerItem, classes.drawerItemSelected] 
-            : classes.drawerItem} disableTypography>
-              {route.name}
-            </ListItemText>
+            divider 
+            key={`${route}${route.activeIndex}`}
+            button 
+            component={Link} 
+            to={route.link} 
+            selected={value === route.activeIndex} 
+            onClick={() => {
+              setOpenDrawer(false); 
+              setValue(route.activeIndex) 
+              }}>
+                <ListItemText 
+                  className={ value === route.activeIndex ? 
+                  [classes.drawerItem, classes.drawerItemSelected] 
+                  : classes.drawerItem} disableTypography>
+                    {route.name}
+                </ListItemText>
           </ListItem>
         ))}
           <ListItem
