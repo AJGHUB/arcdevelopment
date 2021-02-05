@@ -56,8 +56,7 @@ const useStyles = makeStyles(theme => ({
     },
     socialContainer: {
         position: "absolute",
-        marginTop: "-6m",
-        // backgroundColor: theme.palette.common.blue, //Adding this I can at least see them.
+        marginTop: "-6em",
         right: "1.5em",
         [theme.breakpoints.down("xs")]: {
             right: "0.6em",
@@ -101,7 +100,7 @@ export default function Footer(props) {
                             component={Link}  
                             to="/services" 
                             className={classes.link}
-                            onClick={() => {props.setvalue(1); props.setSelectedIndex(0)}}
+                            onClick={() => {props.setValue(1); props.setSelectedIndex(0)}}
                             >
                             Services
                         </Grid>
@@ -110,7 +109,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/customsoftware" 
                             className={classes.link}
-                            onClick={() => {props.setvalue(1); props.setSelectedIndex(1)}}
+                            onClick={() => {props.setValue(1); props.setSelectedIndex(1)}}
                             >
                             Custom Software Development
                         </Grid>
@@ -119,7 +118,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/mobileapps" 
                             className={classes.link}
-                            onClick={() => {props.setvalue(1); props.setSelectedIndex(2)}}
+                            onClick={() => {props.setValue(1); props.setSelectedIndex(2)}}
                             >
                             Mobile App Development
                         </Grid>
@@ -128,7 +127,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/websites" 
                             className={classes.link}
-                            onClick={() => {props.setvalue(1); props.setSelectedIndex(3)}}
+                            onClick={() => {props.setValue(1); props.setSelectedIndex(3)}}
                             >
                             Website Development
                         </Grid>
@@ -143,7 +142,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/revolution"
                             className={classes.link}
-                            onClick={() => props.setvalue(2)}
+                            onClick={() => props.setValue(2)}
                             >
                             The Revolution
                         </Grid>
@@ -152,7 +151,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/revolution" 
                             className={classes.link}
-                            onClick={() => props.setvalue(2)}
+                            onClick={() => props.setValue(2)}
                             >
                             Vision
                         </Grid>
@@ -161,7 +160,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/revolution" 
                             className={classes.link}
-                            onClick={() => props.setvalue(2)}
+                            onClick={() => props.setValue(2)}
                             >
                             Technology
                         </Grid>
@@ -170,7 +169,7 @@ export default function Footer(props) {
                             component={Link} 
                             to="/revolution" 
                             className={classes.link}
-                            onClick={() => props.setvalue(2)}
+                            onClick={() => props.setValue(2)}
                             >
                             Process
                         </Grid>
@@ -185,7 +184,7 @@ export default function Footer(props) {
                        component={Link}  
                        to="/about" 
                        className={classes.link}
-                       onClick={() => props.setvalue(3)}
+                       onClick={() => props.setValue(3)}
                        >
                            About Us
                        </Grid>
@@ -194,7 +193,7 @@ export default function Footer(props) {
                        component={Link} 
                        to="/about" 
                        className={classes.link}
-                       onClick={() => props.setvalue(3)}
+                       onClick={() => props.setValue(3)}
                        >
                            History
                        </Grid>
@@ -203,7 +202,7 @@ export default function Footer(props) {
                        component={Link} 
                        to="/about" 
                        className={classes.link}
-                       onClick={() => props.setvalue(3)}>
+                       onClick={() => props.setValue(3)}>
                            Team
                        </Grid>
                     </Grid>              
@@ -217,7 +216,7 @@ export default function Footer(props) {
                      component={Link} 
                      to="/contact" 
                      className={classes.link}
-                     onClick={() => props.setvalue(4)}
+                     onClick={() => props.setValue(4)}
                      >
                      Contact Us</Grid>
                     </Grid>

@@ -49,6 +49,7 @@ Installs
 
 - npm i
 - npm install @material-ui/styles
+- npm install --save react-lottie
 
 Available Scripts
 In the project directory, you can run:
